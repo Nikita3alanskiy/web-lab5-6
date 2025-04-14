@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакти - EcoLife</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    .card {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card-img-custom {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">EcoLife</a>
+
+    <!-- Кнопка-бургер -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Меню -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">
+            <i class="bi bi-house-door"></i> Головна
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-phone"></i> Контакти
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="feedback.html">
+            <i class="bi bi-chat"></i> Залишити відгук
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Контент -->
+<div class="container mt-4">
+  <!-- Контакти -->
+  <h2 class="mb-4">Наша команда</h2>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <!-- Заланський Нікіта -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/my_photo.jpg" class="img-fluid card-img-custom" alt="Фото Нікіти">
+        <div class="card-body">
+          <h5 class="card-title">Заланський Нікіта</h5>
+          <p class="card-text">
+            <strong>Телефон:</strong> 0636648979<br>
+            <strong>Email:</strong> 1985gramaboy@gmail.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Петренко Анна -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://nashformat.ua/files/handbook_resized/mariya-margulis.400x300.jpeg" class="img-fluid card-img-custom" alt="Фото Анни">
+        <div class="card-body">
+          <h5 class="card-title">Петренко Анна</h5>
+          <p class="card-text">
+            <strong>Телефон:</strong> 0673459821<br>
+            <strong>Email:</strong> anna.petrenko@example.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Коваль Олег -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/cholov_1.png" class="img-fluid card-img-custom" alt="Фото Олега">
+        <div class="card-body">
+          <h5 class="card-title">Коваль Олег</h5>
+          <p class="card-text">
+            <strong>Телефон:</strong> 0501234567<br>
+            <strong>Email:</strong> oleg.koval@example.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Іваненко Марія -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://teleportal.ua/storage/editor/fotos/anna-arefeva.jpeg" class="img-fluid card-img-custom" alt="Фото Марії">
+        <div class="card-body">
+          <h5 class="card-title">Іваненко Марія</h5>
+          <p class="card-text">
+            <strong>Телефон:</strong> 0737778899<br>
+            <strong>Email:</strong> maria.ivanenko@example.com
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Кнопка для прокрутки до верху з круглою формою -->
+<button id="scrollToTop" class="btn btn-primary rounded-circle" style="position: fixed; bottom: 20px; right: 20px; display: none; width: 50px; height: 50px;">
+  <i class="bi bi-arrow-up"></i> <!-- Іконка для прокрутки вгору -->
+</button>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/script.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // При наведенні на картку збільшуємо її
+    $('.card').hover(
+      function() {
+        $(this).css('transform', 'scale(1.05)');
+      },
+      function() {
+        $(this).css('transform', 'scale(1)');
+      }
+    );
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">EcoLife</a>
+
+    <!-- Кнопка-бургер -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Меню -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">
+            <i class="bi bi-house-door"></i> Головна
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">
+            <i class="bi bi-phone"></i> Контакти
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="feedback.html">
+            <i class="bi bi-chat"></i> Залишити відгук
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Контент -->
+<div class="container mt-4">
+  <!-- Пагінація -->
+  <ul class="pagination justify-content-center">
+    <li class="page-item active"><a class="page-link" href="#">Про сталий розвиток</a></li>
+    <li class="page-item"><a class="page-link" href="problem.html">Проблеми екології</a></li>
+    <li class="page-item"><a class="page-link" href="solition.html">Рішення</a></li>
+  </ul>
+
+  <!-- ЗМІСТ: Про сталий розвиток -->
+  <div>
+    <h2 class="mb-4">Що таке сталий розвиток?</h2>
+    <p>Сталий розвиток — це концепція, яка передбачає задоволення потреб нинішнього покоління без шкоди для можливостей майбутніх поколінь задовольняти свої потреби.</p>
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h4>Економічний аспект</h4>
+        <p>Розвиток економіки має базуватись на ефективному використанні ресурсів, створенні нових екологічних технологій та підтримці соціального добробуту.</p>
+      </div>
+      <div class="col-md-6">
+        <h4>Екологічний аспект</h4>
+        <p>Збереження природного середовища, біорізноманіття, чистого повітря і води є ключем до довгострокового виживання людства.</p>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h4>Соціальний аспект</h4>
+        <p>Повага до прав людини, рівність, доступ до освіти та охорони здоров’я формують справедливе та стабільне суспільство.</p>
+      </div>
+      <div class="col-md-6">
+        <h4>Цілі сталого розвитку</h4>
+        <ul>
+          <li>Подолання бідності</li>
+          <li>Якісна освіта</li>
+          <li>Чиста вода та санітарія</li>
+          <li>Боротьба зі змінами клімату</li>
+          <li>Стале містобудування</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<button id="scrollToTop" class="btn btn-primary rounded-circle" style="position: fixed; bottom: 20px; right: 20px; display: none; width: 50px; height: 50px;">
+  <i class="bi bi-arrow-up"></i> <!-- Іконка для прокрутки вгору -->
+</button>
+<script src="../js/app.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

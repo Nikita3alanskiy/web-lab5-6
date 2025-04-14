@@ -7,53 +7,52 @@
   <title></title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <meta name="description" content="">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="../icon.png">
-
-  <link rel="manifest" href="../site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-</head>
 
 <body>
 
+
+
 <!-- Навігація -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">EcoLife</a>
+    <a class="navbar-brand" href="index.html">EcoLife</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><i class="bi bi-house-door"></i> Головна</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"><i class="bi bi-phone"></i> Контакти</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="feedback.html"><i class="bi bi-chat"></i> Залишити відгук</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
-<!-- Контент -->
-<div class="container mt-4">
-  <!-- Пагінація -->
-  <ul class="pagination justify-content-center">
-    <li class="page-item"><a class="page-link" href="index.html">Головна</a></li>
-    <li class="page-item"><a class="page-link" href="pro_stalyi_rozvytok.html">Про сталий розвиток</a></li>
-    <li class="page-item"><a class="page-link" href="problem.html">Проблеми екології</a></li>
-    <li class="page-item"><a class="page-link" href="rishennya.html">Рішення</a></li>
-    <li class="page-item"><a class="page-link" href="novyny.html">Блог / Новини</a></li>
-    <li class="page-item"><a class="page-link" href="kontakty.html">Контакти</a></li>
-  </ul>
 
-  <!-- ЗМІСТ: Головна сторінка -->
+<div class="container mt-4">
+
+
   <div class="text-center">
     <h1 class="mb-4">Ласкаво просимо до EcoLife</h1>
     <div id="carouselExample" class="carousel slide mb-4" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://source.unsplash.com/1200x400/?nature,forest" class="d-block w-100" alt="...">
+          <img src="/img/forest.png" class="d-block w-100" style="max-height: 300px; object-fit: cover;" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="https://source.unsplash.com/1200x400/?recycling,green" class="d-block w-100" alt="...">
+          <img src="/img/for_red.png" class="d-block w-100" style="max-height: 300px; object-fit: cover;" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -63,12 +62,45 @@
         <span class="carousel-control-next-icon"></span>
       </button>
     </div>
-    <p>Наша місія — привернути увагу до екологічних проблем та надихнути на сталий стиль життя. Разом ми збережемо планету!</p>
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Чому екологія важлива?</h2>
+        <p>Зміни клімату, забруднення навколишнього середовища та деградація екосистем — це не просто глобальні проблеми, це реальні виклики, з якими ми стикаємося кожного дня. Як суспільство, ми маємо можливість і відповідальність зробити свій внесок у збереження планети.</p>
+        <p>Щоденні рішення кожного з нас — як ми споживаємо ресурси, як сортуємо сміття, як пересуваємось — впливають на довкілля більше, ніж здається. Навіть найменша дія, коли її повторюють мільйони людей, має потужний ефект.</p>
+      </div>
+      <div class="col-lg-6">
+        <h2>Наша місія</h2>
+        <p>Ми працюємо над тим, щоб кожен міг зробити крок до сталого способу життя. EcoLife пропонує поради, ініціативи та інноваційні рішення для боротьби з екологічними проблемами.</p>
+        <p>Наша платформа створена для тих, хто прагне жити усвідомлено: від екотоварів і практичних порад до інформації про актуальні екологічні події. Ми об'єднуємо небайдужих людей, які вірять, що разом ми можемо змінити світ на краще.</p>
+      </div>
+    </div>
+
+
+
   </div>
-</div>
-  <script src="../js/app.js"></script>
-  <script src="../js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </div>
+  <div class="jumbotron text-center bg-success text-white">
+    <h1 class="display-4">Збережемо природу разом!</h1>
+    <p class="lead">Приєднуйтесь до нашої місії захисту навколишнього середовища та сталого розвитку.</p>
+    <hr class="my-4">
+    <p>Ми пропонуємо інноваційні рішення для боротьби з екологічними проблемами.</p>
+    <a class="btn btn-primary btn-lg" href="stat_evo.html" role="button" data-bs-toggle="tooltip" title="Перехід до детальної інформації про сталий розвиток">
+      Дізнатися більше
+    </a>
+
+  </div>
+
+
+
+<button id="scrollToTop" class="btn btn-primary rounded-circle" style="position: fixed; bottom: 20px; right: 20px; display: none; width: 50px; height: 50px;">
+  <i class="bi bi-arrow-up"></i> <!-- Іконка для прокрутки вгору -->
+</button>
+
+<script src="../js/app.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/script.js"></script>
+
 </body>
 
 </html>
